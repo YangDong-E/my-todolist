@@ -1,0 +1,8 @@
+/* 할일 목록 */
+.TodoList {
+    /* 타이틀의 길이만큼 맞춤 */
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}

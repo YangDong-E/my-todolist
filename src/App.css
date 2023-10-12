@@ -1,0 +1,13 @@
+.add-todo-button {
+    /* position을 fixed로 주면서 할일이 많아졌을때 스크롤이 생겨도 그 위치에 고정시키기위함 */
+    position: fixed;
+    right: -5px;
+    bottom: 0;
+    /* 버튼을 눌렀을때 추가하는 창을 띄웠을때 이 버튼보다 위에 나오기위해 z-index를 설정 */
+    z-index: 100;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    font-size: 5rem;
+    color: #f67280;
+}

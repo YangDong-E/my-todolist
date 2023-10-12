@@ -1,0 +1,46 @@
+.TodoItem {
+    /* 가운데 위치 */
+    margin-left: auto;
+    margin-right: auto;
+
+    /* 테두리 둥글게 */
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px 1px #f67280;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+/* 할일 아이템간의 css */
+.TodoItem + .TodoItem {
+    margin-top: 15px;
+}
+
+.content {
+    cursor: pointer;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+/* svg 파일은 체크박스 아이콘 */
+.content svg {
+    font-size: 1.5rem;
+    color: #f67280;
+}
+
+/* 적혀있는 할일 */
+.content .text {
+    margin-left: 0.5rem;
+    /* felx를 1로 두어서 전체적으로 차지 */
+    flex: 1;
+}
+
+/* content에 체크가 되어있을경우 해당 컴포넌트의 text클래스를 가진 요소 */
+.content.checked .text {
+    color: #6c567b;
+    /* 밑줄 긋기 */
+    text-decoration: line-through;
+    cursor: pointer;
+    opacity: 0.6;
+}
